@@ -48,3 +48,7 @@
   its path every time you run the program.
 
 - Full rewrite in Rust
+
+### 2.0.1
+
+- Minor change to combine the checkpoints in the PDF output into a single column.

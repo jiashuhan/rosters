@@ -135,9 +135,11 @@ impl Generator {
             &base_dir
         };
 
-        let signed_chkpts = vec!["1", "2", "3", "4", "Signed"];
-        let unsigned_chkpts = vec!["1", "2", "3", "4"];
-        let default_chkpt = if self.no_sign { unsigned_chkpts } else { signed_chkpts }
+        let chkpts = vec!["Checkpoints incomplete"];
+        //let signed_chkpts = vec!["1", "2", "3", "4", "Signed"];
+        //let unsigned_chkpts = vec!["1", "2", "3", "4"];
+        //let default_chkpt = if self.no_sign { unsigned_chkpts } else { signed_chkpts }
+        let default_chkpt = chkpts
             .into_iter()
             .map(|s| FromStr::from_str(s))
             .collect::<Result<_, _>>()?;
